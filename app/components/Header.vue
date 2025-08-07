@@ -10,9 +10,7 @@
       <nav
         class="hidden lg:flex items-center gap-8 text-sm font-medium text-gray-800"
       >
-        <NuxtLink to="/gioi-thieu" class="hover:text-orange-500"
-          >GIỚI THIỆU</NuxtLink
-        >
+        <NuxtLink to="/" class="hover:text-orange-500">GIỚI THIỆU</NuxtLink>
 
         <div class="relative group">
           <button class="flex items-center hover:text-orange-500">
@@ -24,22 +22,18 @@
           <div
             class="absolute top-full left-0 mt-2 w-40 bg-white shadow-lg rounded hidden group-hover:block z-50"
           >
-            <NuxtLink
-              to="/dich-vu/thiet-ke"
-              class="block px-4 py-2 hover:bg-gray-100"
+            <NuxtLink to="/" class="block px-4 py-2 hover:bg-gray-100"
               >Thiết kế</NuxtLink
             >
-            <NuxtLink
-              to="/dich-vu/xay-dung"
-              class="block px-4 py-2 hover:bg-gray-100"
+            <NuxtLink to="/" class="block px-4 py-2 hover:bg-gray-100"
               >Xây dựng</NuxtLink
             >
           </div>
         </div>
 
-        <NuxtLink to="/du-an" class="hover:text-orange-500">DỰ ÁN</NuxtLink>
-        <NuxtLink to="/lien-he" class="hover:text-orange-500">LIÊN HỆ</NuxtLink>
-        <NuxtLink to="/tap-chi" class="hover:text-orange-500">TẠP CHÍ</NuxtLink>
+        <NuxtLink to="/" class="hover:text-orange-500">DỰ ÁN</NuxtLink>
+        <NuxtLink to="/" class="hover:text-orange-500">LIÊN HỆ</NuxtLink>
+        <NuxtLink to="/" class="hover:text-orange-500">TẠP CHÍ</NuxtLink>
       </nav>
 
       <!-- Call Button (always visible) -->
@@ -86,23 +80,21 @@
     <!-- Mobile Menu -->
     <div v-if="menuOpen" class="lg:hidden mt-4 px-6">
       <div class="flex flex-col space-y-3 text-sm font-medium text-gray-800">
-        <NuxtLink to="/gioi-thieu" class="hover:text-orange-500"
-          >GIỚI THIỆU</NuxtLink
-        >
+        <NuxtLink to="/" class="hover:text-orange-500">GIỚI THIỆU</NuxtLink>
         <div>
           <span class="block font-semibold">DỊCH VỤ</span>
           <div class="ml-4 space-y-1">
-            <NuxtLink to="/dich-vu/thiet-ke" class="block hover:text-orange-500"
+            <NuxtLink to="" class="block hover:text-orange-500"
               >Thiết kế</NuxtLink
             >
-            <NuxtLink to="/dich-vu/xay-dung" class="block hover:text-orange-500"
+            <NuxtLink to="" class="block hover:text-orange-500"
               >Xây dựng</NuxtLink
             >
           </div>
         </div>
-        <NuxtLink to="/du-an" class="hover:text-orange-500">DỰ ÁN</NuxtLink>
-        <NuxtLink to="/lien-he" class="hover:text-orange-500">LIÊN HỆ</NuxtLink>
-        <NuxtLink to="/tap-chi" class="hover:text-orange-500">TẠP CHÍ</NuxtLink>
+        <NuxtLink to="/" class="hover:text-orange-500">DỰ ÁN</NuxtLink>
+        <NuxtLink to="/" class="hover:text-orange-500">LIÊN HỆ</NuxtLink>
+        <NuxtLink to="/" class="hover:text-orange-500">TẠP CHÍ</NuxtLink>
       </div>
     </div>
   </header>

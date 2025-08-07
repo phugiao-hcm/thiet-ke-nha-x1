@@ -10,7 +10,7 @@
         Tin tức - sự kiện của <span class="text-red-500">Hiashi</span>
       </h2>
       <NuxtLink
-        to="/tin-tuc"
+        to="/"
         class="flex items-center text-gray-700 hover:text-red-500 transition"
       >
         <span class="mr-2">Xem tất cả</span>
@@ -34,7 +34,7 @@
     <!-- Posts -->
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
       <div v-for="post in posts" :key="post.id" class="space-y-4 group">
-        <NuxtLink :to="post.link" class="block overflow-hidden rounded">
+        <NuxtLink to="/" class="block overflow-hidden rounded">
           <img
             :src="post.image"
             :alt="post.title"
@@ -42,7 +42,7 @@
           />
         </NuxtLink>
         <p class="text-gray-500 text-sm">{{ post.date }}</p>
-        <NuxtLink :to="post.link">
+        <NuxtLink to="/">
           <h3
             class="font-bold text-base sm:text-lg hover:text-red-500 transition"
           >

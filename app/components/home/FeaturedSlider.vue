@@ -41,7 +41,7 @@
         <div class="flex justify-between items-center mb-4">
           <h3 class="text-2xl font-semibold">Waterpoint Bến Lức</h3>
           <NuxtLink
-            to="/du-an"
+            to="/"
             class="bg-orange-500 hover:bg-orange-600 text-white px-4 py-2 rounded-full text-sm"
           >
             Xem toàn bộ
