@@ -1,7 +1,12 @@
 <template>
-  <section class="news-section max-w-screen-xl mx-auto py-16">
-    <div class="flex items-center justify-between mb-12">
-      <h2 class="text-3xl font-semibold uppercase">
+  <section
+    class="news-section max-w-screen-xl mx-auto px-4 sm:px-6 py-12 sm:py-16"
+  >
+    <!-- Heading -->
+    <div
+      class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 mb-8 sm:mb-12"
+    >
+      <h2 class="text-2xl sm:text-3xl font-semibold uppercase">
         Tin tức - sự kiện của <span class="text-red-500">Hiashi</span>
       </h2>
       <NuxtLink
@@ -26,18 +31,21 @@
       </NuxtLink>
     </div>
 
-    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+    <!-- Posts -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
       <div v-for="post in posts" :key="post.id" class="space-y-4 group">
         <NuxtLink :to="post.link" class="block overflow-hidden rounded">
           <img
             :src="post.image"
             :alt="post.title"
-            class="w-full h-56 object-cover transition-transform group-hover:scale-105"
+            class="w-full h-48 sm:h-56 object-cover transition-transform group-hover:scale-105"
           />
         </NuxtLink>
         <p class="text-gray-500 text-sm">{{ post.date }}</p>
         <NuxtLink :to="post.link">
-          <h3 class="font-bold text-lg hover:text-red-500 transition">
+          <h3
+            class="font-bold text-base sm:text-lg hover:text-red-500 transition"
+          >
             {{ post.title }}
           </h3>
         </NuxtLink>
@@ -47,11 +55,12 @@
   </section>
 </template>
 
+
 <script setup>
 const posts = [
   {
     id: 1,
-    image: "/images/news_1.png",
+    image: "images/news_1.png",
     date: "21/09/2023",
     title: "Giải pháp xanh cho hệ kết cấu cùng Glubam (Glued Laminated Bamboo)",
     description:
@@ -60,7 +69,7 @@ const posts = [
   },
   {
     id: 2,
-    image: "/images/news_2.png",
+    image: "images/news_2.png",
     date: "31/08/2023",
     title: "Có nên sử dụng sàn nhựa Vinyl?",
     description:
@@ -69,7 +78,7 @@ const posts = [
   },
   {
     id: 3,
-    image: "/images/news_3.png",
+    image: "images/news_3.png",
     date: "20/09/2023",
     title: "Gỗ tre thông minh - ứng dụng đa chiều",
     description: "HiYo vừa cập nhật thêm những sản phẩm độc đáo...",
@@ -77,7 +86,7 @@ const posts = [
   },
   {
     id: 4,
-    image: "/images/news_4.png",
+    image: "images/news_4.png",
     date: "31/08/2023",
     title: "Cẩm nang mua sàn gỗ an toàn",
     description:
